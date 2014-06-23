@@ -22,7 +22,7 @@ class TechnoSpider(Spider):
         for cat in lev0:
             item = Lev0Item()
             item['Name'] = cat.xpath('a/text()').extract()
-            item['Href'] = cat.xpath('a/@href').extract()
+            item['Href'] =  "http://technopoint.ru"+''.join(cat.xpath('a/@href').extract())
             item['Count'] = cat.xpath('span[@class="count"]/text()').extract()
             items.append(item)
         #sites = sel.xpath('/html/body/*/div[@class="quote"]')
