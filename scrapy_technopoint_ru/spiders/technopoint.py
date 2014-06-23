@@ -17,7 +17,7 @@ class TechnoSpider(Spider):
     def parse(self, response):
         sel = Selector(response)
         #print sel
-        lev0 = sel.xpath('//ul/li[@class="lev0"]')
+        lev0 = sel.xpath('//ul/li[@class="lev3"]')
         items =[]
         for cat in lev0:
             item = Lev0Item()
