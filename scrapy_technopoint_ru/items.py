@@ -6,6 +6,14 @@
 from scrapy.item import Item, Field
 
 class ScrapyTechnopointRuItem(Item):
+    
+    # define the fields for your item here like:
+    # name = Field()
+    pass
+class Lev0Item(Item):
+    Name = Field()
+    Href = Field()
+    Count = Field()
     # define the fields for your item here like:
     # name = Field()
     pass
